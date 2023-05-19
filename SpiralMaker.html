@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link href="Css/Style.css" rel="stylesheet" type="text/css">
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=utf-8" />
+    <title>SpiralMaker</title>
+</head>
+
+<body style="background-color: rgb(0, 0, 0);">
+        <div class = "content">
+            <a class="link" href="index.html">Home Page</a>
+
+            <center>
+            <a class="simple-text">Distance:</a>
+            <input class = "scroll-bar" id="forwardValue" type="range" min="0" max="10" step="1" onchange="updateForwardValue(this.value)">
+            <a class="simple-text" id="forwardValueNumber">1</a><br>
+
+            <a class="simple-text">Rotation:</a>
+            <input id="rotationValue" type="range" min="0" max="360" step="1" onchange="updateRotationValue(this.value)">
+            <a class="simple-text" id="rotationValueNumber">1</a><br>
+
+            <a class="simple-text">Line Size:</a>
+            <input id="PenSize" type="range" min="1" max="30" step="1" onchange="updatePenSizeValue(this.value)">
+            <a class="simple-text" id="PenSizeValueNumber">1</a><br>
+
+            <a class="simple-text">Iteration Number:</a>
+            <input id="Iteration" type="range" min="1" max="1200" step="1" onchange="updateIterationValue(this.value)">
+            <a class="simple-text" id="IterationValueText">1</a><br>
+
+            <br>
+
+            <button id="generateOnceButton">Draw One</button>
+            <button id="generateButton">Play</button>
+            <button id="pause">Pause</button>
+            <button id="clearCanvas">Clear Canvas</button>
+            <button id="setRandomValue">Randomise</button> <br> <br>
+            <button id="undo">undo</button>
+            <button id="redo">redo</button>
+            <button id="download">Download Image</button><br>
+
+            <br>
+            </center>
+        </div>
+
+        <canvas id="myCanvas" width="1000" height="400"></canvas>
+        <script src="Js/script.js"></script>
+
+    
+</body>
+
+</html>

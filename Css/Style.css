@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+input[type="range"] {
+    /* Styles for the track */
+    width: 20%;
+    height: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  /* Styles for the thumb */
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+button {
+    color : black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.black-band {
+    background-color: black;
+    padding: 0px;
+    color: white;
+}
+
+.top-band {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.bottom-band {
+    background-color: black;
+    min-height: calc(100vh - 200px); /* Adjust the value to leave space for the top and bottom bands */
+}
+
+.content {
+    background-color: rgb(20, 20, 20);
+    padding: 20px;
+}
+
+.simple-text {
+    color : white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.title {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.title-warning {
+    color: rgb(255, 0, 0);
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.warning-text {
+    color: rgb(255, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.link {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.full-window-image {
+    width: 80vw;
+    height: 20vh;
+    object-fit: cover;
+}
